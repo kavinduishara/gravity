@@ -4,7 +4,6 @@ import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Background;
@@ -24,8 +23,8 @@ public class GravityController implements Initializable {
     protected ToggleButton toggle;
 
     private Timeline timeline;
-    private List<CelestialBody> celestialBodies = new ArrayList<>();
-    private List<CelestialBody> list = new ArrayList<>();
+    private final List<CelestialBody> celestialBodies = new ArrayList<>();
+    private final List<CelestialBody> list = new ArrayList<>();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
